@@ -30,5 +30,12 @@ fetch('./taller.json')
             ${productos}
         </tbody>
         `
+        let direccion = document.querySelector('#direccion')
+        direccion.innerHTML = data.datos_tienda.direccion
+        let telefono = document.querySelector('#telefono')
+        telefono.innerHTML = data.datos_tienda.telefono
+        let correo = document.querySelector('#correo')
+        correo.innerHTML = data.datos_tienda.correo
+    
     })
     .catch(error => console.error(error))
